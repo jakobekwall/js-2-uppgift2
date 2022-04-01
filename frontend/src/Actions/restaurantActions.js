@@ -5,4 +5,5 @@ export const bookTable = (bookTableType, amount) => (
         order: bookTableType,
         payload: amount
 
-    })
+    }
+)

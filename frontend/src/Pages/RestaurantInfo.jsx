@@ -2,31 +2,31 @@ import { useLocation } from "react-router-dom"
 
 export default function RestaurandInfo() {
     const location = useLocation()
-    console.log(location);
+    // console.log(location);
 
 
-    state = {
-        count: 0
-    };
+    // state = {
+    //     count: 0
+    // };
 
-    increment = () => {
-        this.setState(state => ({
-            count: state.count + 1
-        }))
-    }
+    // increment = () => {
+    //     this.setState(state => ({
+    //         count: state.count + 1
+    //     }))
+    // }
 
-    decrement = () => {
-        this.setState(state => ({
-            count: state.count - 1
-        }))
-    }
+    // decrement = () => {
+    //     this.setState(state => ({
+    //         count: state.count - 1
+    //     }))
+    // }
 
 
 
 
     return (
         <section>
-            <article>
+            {/* <article>
                 <h1>{location.state.name}</h1>
                 <p>{location.state.address}</p>
                 <p> {location.state.type}</p>
@@ -43,7 +43,7 @@ export default function RestaurandInfo() {
                 <span className="count">{this.state.count}</span>
                 <button onClick={this.increment}>+</button>
 
-            </article>
+            </article> */}
 
         </section >
     )

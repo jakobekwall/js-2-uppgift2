@@ -2,27 +2,23 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import RestaurantCard from "../Components/RestaurantCard";
 
-export default function Landingpage() {
+export default function Landingpage({ restaurants }) {
 
-    const url = "http://localhost:5001/data.json";
-    const [restaurants, setRestaurants] = useState([]);
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setRestaurants(data))
-    }, [])
-
-    let mapThis = restaurants.restaurant
+    console.log(restaurants);
 
     const [searchRestaurants, setSearchRestaurants] = useState([]);
-
-
-
+    let mapThis = restaurants;
     return (
 
         <main>
-            <h1></h1>
-
+            <h1>HEJ</h1>
+            {
+                restaurants.map((restaurant, id) => (
+                    <Link key={id} to={"/Restaurants"}>
+                        <p >{restaurant.name}</p>
+                    </Link>))
+            }
+            {/* 
             <input type="text" placeholder="Sök restaurang" onChange={({ target: { value } }) => setSearchRestaurants(value)} />
 
             {
@@ -43,7 +39,7 @@ export default function Landingpage() {
                                 </section>
                             )
                         }) : null
-            }
+            } */}
 
 
 

@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require("cors")
 const app = express(); //dessa rader låter oss använda express i vår index.js-fil
-const port = 5001; //vilken port vi vill ha
+const port = 5002; //vilken port vi vill ha
 
 //vill vi skapa en GET-route
 //det är då denna vi kommer anropa från vår react-app (klientsidan)
