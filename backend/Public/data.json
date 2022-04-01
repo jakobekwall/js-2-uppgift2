@@ -1,0 +1,93 @@
+{
+    "restaurant": [{
+            "id": 1,
+            "name": "Tavalo",
+            "address": "Magasingatan 19",
+            "type": "Italienskt kök",
+            "description": "Götaplatsgruppen, som driver flera omtalade och framgångsrika krogar i Göteborg, står även bakom Tavolo på Magasinsgatan. I de gamla Artilleristallarna influeras man av det italienska köket och bjuder på diverse pastarätter, pizzor och klassiska förrätter som burrata med tomat och buffelmozzarella med ciabatta. I lokalen faller gästernas blickar ofrånkomligt på det 6 800 kilo tunga hästhuvudet, som är en kopia av Leonardo da Vincis Cavallo di Forcione.",
+            "rating": "3,4",
+            "img": "https://www.gp.se/image/policy:1.37206629:1644589009/image.jpg?f=Wide%26w=1200%26%24p%24f%24w=834285a"
+        },
+        {
+            "id": 2,
+            "name": "Wolfgang",
+            "address": "Västra Hamngatan 24",
+            "type": "Franskt kök",
+            "description": "Wolfgang Vincafé är ett populärt vattenhål för många av stadens mat- och vinfantaster - och det gäller under dagens alla timmar. Vincafét gör skäl för sitt namn, hit kommer man för brunchmenyn, likaväl som för kvällens meny av mellanrätter - eller helt enkelt för ett gott glas från det breda vinbutbudet. Wolfgangs uteservering har ett av stadens bästa sollägen och fylls snabbt på så fort solen är framme.",
+            "rating": "4,0",
+            "img": "https://static.thatsup.co/content/img/place/w/o/wolfgang-vincafe-4.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Toso",
+            "address": "Götaplatsen, Avenyn",
+            "type": "Asiatiskt kök",
+            "description": "Toso har funnits ett bra tag nu, och är ett sånt ställe som lyckas med konststycket att alltid vara ett av de stora samtalsämnena när det snackas restauranger. Den panasiatiska krogen uppe vid Götaplatsen är sällan tom och en reservation i god tid är att rekommendera. Köket jobbar med lokala råvaror och asiatiska smaker, en kombination som de enligt många är bäst i klassen på.",
+            "rating": "4,4",
+            "img": "https://www.gp.se/image/policy:1.4554400:1503308937/Bild-Anna-von-Br-ouml-mssen.jpg?f=Wide&w=1024&$p$f$w=b46ca1e"
+        },
+        {
+            "id": 4,
+            "name": "Brasserie X",
+            "address": "Göteborgsvägen 91",
+            "type": "Franskt kök",
+            "description": "I Mölndal strax söder om stan ligger storslagna Quality Hotel The Weaver och hotellrestaurangen Brasserie X. Här har man skapat en modern och gemytlig mötesplats för både turister och lokalbor i alla åldrar. Maten kretsar kring franska influenser som blandats upp med lokala råvaror och en nordisk touch",
+            "rating": "0,0",
+            "img": "https://images.squarespace-cdn.com/content/v1/57a1826915d5dbbcd2050124/1572356532420-ZO7Q6FS4T5BO4J1WQ6ZR/DSC00788.jpg?format=2500w"
+        },
+        {
+            "id": 5,
+            "name": "Diket",
+            "address": "Karl Johans gatan 11, Majorna",
+            "type": "",
+            "description": "Mitt i Majorna huserar en starkt lysande stjärna på restauranghimlen. Diket drivs av tre erfarna kockar, och menyn präglas av vad de tycker är mest spännande för stunden, och allting görs med stor finess. Vinet serveras både på tapp och på flaska. Stämningen är familjär och ledig, hit kan man komma för stort firande och beställa in hela menyn, eller för en vardagsmiddag av det bästa slaget.",
+            "rating": "3,0",
+            "img": "https://www.gp.se/image/policy:1.34129657:1631813048/image.jpg?f=Wide%26w=1200%26%24p%24f%24w=834285a"
+        },
+        {
+            "id": 6,
+            "name": "Brasserie Lavette",
+            "address": "Södra Vägen 30",
+            "type": "Från havet & vegetariskt",
+            "description": "På Lavette brassas det skaldjur så att det visslar om det. Kvällsmenyn fokuserar på skaldjur och grillat, men även de som helst käkar kött eller vego hittar vällagade alternativ. På helgerna dukas det upp till brunch á la carte redan från 11, och tanken är att den som vill ska kunna tillbringa hela dagen på brasseriet med den festliga stämningen.",
+            "rating": "3,3",
+            "img": "https://www.gp.se/image/policy:1.56399122:1633414652/Wr0XebzhuEXkeJo4425CIenlL6w.jpg?f=Regular&w=960&$p$f$w=371ddb9"
+        },
+        {
+            "id": 7,
+            "name": "Studio Sticazzi",
+            "address": "Storgatan 22",
+            "type": "Italienskt kök",
+            "description": "I det före detta garaget i Vasa huserar Studio Sticazzi, där italiensk mat och vinkultur helt och hållet står i centrum. Menyn presenteras på griffeltavla och vinkylarna är välfyllda med spännande flaskor. Varma dagar bjuder uteserveringen på gott solläge och svalkande cocktails. ",
+            "rating": "5,0",
+            "img": "https://media-cdn.tripadvisor.com/media/photo-s/12/07/cc/92/matsalen.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Vilda",
+            "address": "Vasagatan 40",
+            "type": "Nordiskt kök",
+            "description": "På finkrogen Vilda har man skapat en unik matupplevelse med lokala, hållbara och vilda råvaror från naturen. Avnjut deras avsmakningsmeny eller besök vinbaren där det serveras à la carte. Båda speglar de nordiska säsongerna - vinter, vår, sommar och höst.",
+            "rating": "5,0",
+            "img": "https://static.thatsup.co/content/img/place/v/i/vilda-restaurant-9.jpg"
+        },
+        {
+            "id": 9,
+            "name": "OGBG",
+            "address": "Skeppsbroplatsen 1",
+            "type": "Asiatiskt kök",
+            "description": "På populära OGBG är det asiatiska smaker i uppdaterad kostym som är ledorden i köket. Sammetssofforna och de moderna väggmålningarna ger känslan av internationell puls. Högst upp finns takbaren med stort T: TaKeT. Enligt The Rooftop Guide så är baren, med milsvid utsikt över Göteborgs hamninlopp, även världens bästa takbarer.",
+            "rating": "3,0",
+            "img": "https://www.gp.se/image/policy:1.19412637:1631814310/image.jpg?f=Wide%26w=1200%26%24p%24f%24w=834285a"
+        },
+        {
+            "id": 10,
+            "name": "Noot",
+            "address": "Östras Larmgatan 4",
+            "type": "Nordiskt kök",
+            "description": "Inne i Radisson Blu Scandinavia Hotel hittar du Noot Nordik Kitchen, som serverar traditionella skandinaviska rätter med sin egen moderna touch. Köttbullar gjorda på vildsvin, ren med blåbär och svensk shitake finns på menyn, bland mycket annat. Restaurangen är elegant inredd i skandinavisk minimalism med ljusa träslag och gröna växter.",
+            "rating": "4,0",
+            "img": "https://static.thatsup.co/content/img/place/n/o/noot-nordik-kitchen-bar-77.jpg"
+        }
+    ]
+}
