@@ -1,26 +1,8 @@
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom";
 
 export default function RestaurandInfo() {
-    const location = useLocation()
+    const location = useLocation();
     console.log(location);
-
-
-    state = {
-        count: 0
-    };
-
-    increment = () => {
-        this.setState(state => ({
-            count: state.count + 1
-        }))
-    }
-
-    decrement = () => {
-        this.setState(state => ({
-            count: state.count - 1
-        }))
-    }
-
 
 
 
@@ -31,20 +13,33 @@ export default function RestaurandInfo() {
                 <p>{location.state.address}</p>
                 <p> {location.state.type}</p>
                 <p>{location.state.description}</p>
-                <p>{location.state.rating}</p>
                 <img src={location.state.img} alt="" />
-            </article>
-
+                <p>Rating: {location.state.rating}</p>
+            </article >
             <article>
-                <p>Boka 1-8 personer</p>
-                <p>Välj antal gäster</p>
-
-                <button onClick={this.decrement}>-</button>
-                <span className="count">{this.state.count}</span>
-                <button onClick={this.increment}>+</button>
-
+                <h1>Boka bord</h1>
             </article>
+            <article>
 
-        </section >
+                <button>-</button>
+                <button>+</button>
+
+                <input type="date" />
+                <select name="" id="">
+                    <option value="">18:00 - 19:00</option>
+                    <option value="">18:30 - 19:30</option>
+                    <option value="">19:00 - 20:00</option>
+                    <option value="">19:30 - 20:30</option>
+                    <option value="">20:00 - 21:00</option>
+                    <option value="">20:30 - 21:30</option>
+                    <option value="">21:00 - 22:00</option>
+                    <option value="">21:30 - 22:30</option>
+                </select>
+            </article>
+            <article>
+                <button>Bekräfta bokning</button>
+            </article>
+        </section>
+
     )
 }

@@ -1,26 +1,26 @@
-import { store } from "../restaurantStore"
+const initialState = {
+    login: {
+        account: "jakob",
+        password: "hejhej",
+        loggedIn: false
+    },
 
-const restaurantReducer = (state = store, action) => {
+    restaurants: [],
+    bookings: []
+};
+
+
+export const restaurantsReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case "CHOOSE_RESTAURANT":
-            console.log(action.order);
-
-            return {
-                ...state,
-                [action.order]: state[action.order] - action.payload
-
+        case "BOOK_TABLE":
+            return [...state.bookings, action.payload]
+        case "LOGIN":
+            if (action.payload.account === state.login.account && action.payload.password === state.login.account) {
+                return state.login.loggedIn = true;
             }
-
-        // case "ADD_ICECREAM":
-        //     console.log(action);
-
-        //     return Object.assign({}, state, {
-        //         [action.order]: state[action.order] + action.payload
-        //     })
-        // default:
-        //     return state;
+        default:
+            return state
     }
-}
 
-export default restaurantReducer;
+}  
