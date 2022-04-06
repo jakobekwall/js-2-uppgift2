@@ -1,0 +1,44 @@
+* {
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+
+
+.restaurantLogo {
+    width: 40vw;
+    height: 30vh;
+}
+
+
+.username {
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 4vh;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+.password {
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 4vh;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+
+.login {
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 2px;
+    height: 6vh;
+    width: 20vw;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}

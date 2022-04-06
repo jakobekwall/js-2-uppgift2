@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Landingpage from "./Pages/LandingPage";
-import RestaurantInfo from "./Pages/RestaurantInfo";
+import RestaurantBooking from "./Pages/RestaurantBooking";
 import Start from "./Pages/StartPage";
 import { useState, useEffect } from "react";
+import RestaurantCheckout from "./Pages/RestaurantCheckout";
 
 function App() {
   const url = "http://localhost:5001/data.json";
@@ -22,7 +23,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Start />} />
             <Route path="/restaurants" element={<Landingpage restaurants={restaurants} />} />
-            <Route path="/RestaurandInfo" element={<RestaurantInfo />} />
+            <Route path="/RestaurandBooking" element={<RestaurantBooking />} />
+            <Route path="/RestaurantCheckout" element={<RestaurantCheckout />} />
+
           </Routes>
         </main>
       </Router>

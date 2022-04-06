@@ -1,0 +1,14 @@
+.homeLogo {
+    width: 16vw;
+    height: 12vh;
+}
+
+.searchField {
+    width: 40vw;
+    height: 6vh;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+}

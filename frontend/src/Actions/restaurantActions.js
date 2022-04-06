@@ -1,14 +1,12 @@
-export const bookTable = (payload) => (
+export const bookTable = (booking) => ({
+    type: "BOOK_TABLE",
+    // login: payload.login,
+    // restaurants: payload.restaurant,
+    // date: payload.date,
+    // persons: payload.person,
+    payload: booking
 
-
-    {
-        type: "BOOK_TABLE",
-        login: payload.login,
-        restaurants: payload.restaurant,
-        date: payload.date,
-        persons: payload.person
-
-    })
+})
 
 
 export const login = (payload) => ({
@@ -16,3 +14,16 @@ export const login = (payload) => ({
     account: payload.account,
     password: payload.password
 })
+
+
+export const incrementGuests = () => {
+    return {
+        type: "INCREMENT_GUESTS",
+    }
+}
+
+export const decrementGuests = () => {
+    return {
+        type: "DECREMENT_GUESTS"
+    }
+}

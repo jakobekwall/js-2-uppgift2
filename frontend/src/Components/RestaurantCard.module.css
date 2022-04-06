@@ -1,0 +1,10 @@
+.restaurants {
+    font-size: 30px;
+    margin: 1rem;
+}
+
+img {
+    border: solid whitesmoke;
+    border-radius: 16px;
+    width: 20vw;
+}

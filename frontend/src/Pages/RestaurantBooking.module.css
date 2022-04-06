@@ -1,0 +1,28 @@
+section {
+    text-align: center;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+img {
+    width: 86vw;
+    height: 50vh;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: #477698;
+    margin: 0;
+}
+
+button {
+    width: 16vw;
+}
