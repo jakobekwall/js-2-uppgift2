@@ -1,45 +1,70 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./RestaurantBooking.module.css"
-import { incrementGuests, decrementGuests } from "../Actions/restaurantActions"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect, useState } from "react";
 import { bookTable } from "../Actions/restaurantActions";
 
-
 export default function RestaurandBooking() {
     const location = useLocation();
-    const amount = useSelector((state) => state.amount)
-    console.log(amount);
 
     const dispatch = useDispatch()
 
-    const [guests, setGuests] = useState()
-    const [date, setDate] = useState()
-    const [time, setTime] = useState()
+    //tomma states som fylls in i inputs
+    const [guests, setGuests] = useState(1)
+    const [date, setDate] = useState("")
+    const [time, setTime] = useState("")
+    const [checkBox, setCheckbox] = useState(1)
 
-
+    //bokningen som sedan skickas till store och hämtas i RestaurantCheckout när den fyllts i
     const [bookingForm, setBookingForm] = useState({
         name: location.state.name,
         address: location.state.address,
-        guests: 3,
+        guests: guests,
         date: date,
         time: time
-
     })
 
-    console.log(bookingForm);
+    console.log(date);
 
+    //useEffect som triggas av checkbox
+    useEffect(() => {
+        confirm()
+    }, [checkBox])
+
+    //sätter state med informationen som fyllts i
     function confirm() {
         setBookingForm({
             ...bookingForm,
             date: date,
-            time: time
+            time: time,
+            guests: guests
         })
     }
+    //en alert om dessa fält inte är ifyllda
+    function agree() {
+        if (date === "" && time === "") {
+            alert("Fyll i all information")
+        } else {
+            // Annars byter värde i checkbox och bokningsknappen visas
+            setCheckbox(2)
+        }
+    }
 
+    const logInInfo = useSelector((state) => state.loggedIn)
+
+    console.log(logInInfo);
 
     return (
         <section>
+
+
+            <p>{logInInfo ? null : "Logga in för att boka. Klicka på loggan"}</p>
+
+            <Link to={"../"}>
+                <img className={styles.homeLogo} src="https://www.homerestaurant.com/resources/img/logo-white.png" alt="" />
+            </Link>
+
+            {/* sätter ut infon från vald restaurang */}
             <article>
                 <h1>{location.state.name}</h1>
                 <h2>{location.state.address}</h2>
@@ -51,14 +76,14 @@ export default function RestaurandBooking() {
             <article>
                 <h1>Boka bord</h1>
                 <p>Antal gäster</p>
-                <button onClick={() => dispatch(decrementGuests())} >-</button>
-                <span>{amount}</span>
-                <button onClick={() => dispatch(incrementGuests())}>+</button>
+                <button className={guests === 1 ? `${styles.hideBtn}` : `${styles.decrementBtn}`} onClick={() => setGuests(guests - 1)} >-</button>
+                <span>{guests}</span>
+                <button className={styles.incrementBtn} onClick={() => setGuests(guests + 1)}>+</button>
             </article>
 
             <article>
-                <input onChange={(e) => setDate(e.target.value)} type="date" />
-                <select onChange={(e) => setTime(e.target.value)} name="" id="">
+                <input className={styles.date} onChange={(e) => setDate(e.target.value)} type="date" />
+                <select className={styles.time} onChange={(e) => setTime(e.target.value)} name="" id="">
                     <option value="18:00 - 19:00">18:00 - 19:00</option>
                     <option value="18:30 - 19:30">18:30 - 19:30</option>
                     <option value="19:00 - 20:00">19:00 - 20:00</option>
@@ -70,12 +95,14 @@ export default function RestaurandBooking() {
                 </select>
             </article>
 
+            <article className={styles.confirmBtn}>
+                <label htmlFor="checkbox">Godkänn</label>
+                <input className={styles.confirm} type="checkbox" onClick={() => agree()} />
 
-
-            <article>
-                <input type="checkbox" onClick={() => confirm()} />
+                {/* button som tar dig till RestaurantCheckout med den ifyllda informationen, 
+                men syns bara om man har fyllt i datum och tid för bokning och godkänt med checkbox*/}
                 <Link to={"/RestaurantCheckout"}>
-                    <button onClick={() => dispatch(bookTable(bookingForm))} >Boka bord</button>
+                    <button className={(checkBox === 2 && date !== "" && time !== "" && logInInfo === true) ? `${styles.bookBtn}` : `${styles.hideBtn}`} onClick={() => dispatch(bookTable(bookingForm))} >Boka bord</button>
                 </Link>
             </article>
         </section>

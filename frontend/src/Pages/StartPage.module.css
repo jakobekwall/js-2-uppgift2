@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(62, 62, 62);
+    background-color: #293120;
     color: white;
 }
 
@@ -14,20 +14,24 @@
 .username {
     margin: 1rem;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid #293120;
     border-radius: 4px;
     height: 4vh;
-    background-color: rgb(100, 100, 100);
+    background-color: #6c7d66;
+    color: white;
+}
+
+::placeholder {
     color: white;
 }
 
 .password {
     margin: 1rem;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid #293120;
     border-radius: 4px;
     height: 4vh;
-    background-color: rgb(100, 100, 100);
+    background-color: #6c7d66;
     color: white;
 }
 
@@ -35,10 +39,10 @@
 .login {
     margin: 1rem;
     text-align: center;
-    border: 2px solid white;
-    border-radius: 2px;
+    border: 2px solid #293120;
+    border-radius: 4px;
     height: 6vh;
     width: 20vw;
-    background-color: rgb(100, 100, 100);
+    background-color: #6c7d66;
     color: white;
 }

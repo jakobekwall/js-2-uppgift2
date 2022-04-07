@@ -3,6 +3,11 @@ section {
     margin: 1rem;
 }
 
+.homeLogo {
+    width: 16vw;
+    height: 12vh;
+}
+
 h1 {
     font-size: 30px;
 }
@@ -19,10 +24,81 @@ img {
 .rating {
     font-size: 20px;
     font-weight: bold;
-    color: #477698;
     margin: 0;
 }
 
-button {
+.numberOfGuests {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.decrementBtn {
+    font-weight: bold;
+    font-size: 20px;
     width: 16vw;
+    height: 4vh;
+    background-color: #6c7d66;
+    margin: 1rem;
+    border: 2px solid #293120;
+    border-radius: 8px;
+}
+
+
+.incrementBtn {
+    font-weight: bold;
+    font-size: 20px;
+    width: 16vw;
+    height: 4vh;
+    background-color: #6c7d66;
+    margin: 1rem;
+    border: 2px solid #293120;
+    border-radius: 8px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 16px;
+    width: 30vw;
+    height: 4vh;
+    text-align: center;
+    margin: 1rem;
+    background-color: #6c7d66;
+    border: 2px solid #293120;
+    border-radius: 8px;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 16px;
+    width: 30vw;
+    height: 4vh;
+    text-align: center;
+    margin: 1rem;
+    background-color: #6c7d66;
+    border: 2px solid #293120;
+    border-radius: 8px;
+}
+
+.hideBtn {
+    display: none;
+}
+
+.bookBtn {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    width: 24vw;
+    height: 6vh;
+    background-color: #6c7d66;
+    margin: 1rem;
+    border: 2px solid #293120;
+    border-radius: 8px;
+}
+
+.confirmBtn {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

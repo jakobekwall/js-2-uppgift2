@@ -1,0 +1,9 @@
+.homeLogo {
+    width: 16vw;
+    height: 12vh;
+}
+
+.bookingContainer {
+    border: 2px solid white;
+    border-radius: 8px;
+}
